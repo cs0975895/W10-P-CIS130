@@ -18,18 +18,33 @@
 .Music {
     display: flex;
     justify-content: space-evenly;
-    background-color:rgb(104, 19, 19);
+    background-color:rgb(117, 22, 22);
 }
 
 .albums {
-    background-color: transparent;
+    background-color: rgb(117, 22, 22);
     margin: 10%;
     padding: 15%;
     border: 1px solid black;
+}
+
+.album-1, .album-2, .album-3 {
+    background-color: white;
+    margin: 10%;
+    padding: 15%;
+    border: 4px solid black;
 }
 
 nav li{
     font-weight: 300;
     
 
+}
+
+.video {
+    background-color: rgb(117, 22, 22)
+}
+
+.video-container {
+    border: 4px solid black;
 }
