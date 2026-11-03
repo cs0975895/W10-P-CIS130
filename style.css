@@ -1,3 +1,9 @@
+body {
+    background-color: rgb(117, 22, 22);
+}
+
+
+
 .Hero {
     background-image: url('images/jazzband.jpg');
     background-size: cover;
@@ -17,28 +23,43 @@
 
 .Music {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     background-color:rgb(117, 22, 22);
+    text-align: center;
+    margin: auto;
+    width: auto;
+    
+
+}
+#Music h1 {
+    display: block;
+    text-align: center;
+    padding: 2rem;
 }
 
 .albums {
     background-color: rgb(117, 22, 22);
-    margin: 10%;
-    padding: 15%;
+    margin: auto;
+    padding: auto;
     border: 1px solid black;
+    width: 100%;
 }
 
 .album-1, .album-2, .album-3 {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1.5rem;
+    text-align: center;
     background-color: white;
-    margin: 10%;
-    padding: 15%;
-    border: 4px solid black;
 }
 
-nav li{
-    font-weight: 300;
-    
-
+.albums img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
 }
 
 .video {
@@ -47,4 +68,63 @@ nav li{
 
 .video-container {
     border: 4px solid black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;  
+    width: auto;
+    background-color: #bd5c5c;
+
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #9c952d;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (min-width: 768px) {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+       overflow: hidden;
+    background-color: #bd5c5c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    }
+
+    ul li {
+        float: left;
+    }
+
+    ul li a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        background-color:#9c952d
+    }
+
+.albums {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+}
+
 }
